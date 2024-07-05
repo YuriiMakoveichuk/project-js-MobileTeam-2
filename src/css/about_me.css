@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #1c1d20;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -18,6 +22,9 @@
     overflow: hidden;
 }
 
+
+
+
 .section-about-me {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -25,5 +32,34 @@
 
 .wrapper-about-me-and-photo {
     display: flex;
+    flex-direction: column;
     row-gap: 16px;
+    margin-bottom: 32px;
 }
+
+.text-about-me {
+    padding: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+
+    background: #242527;
+    border-radius: 24px;
+    max-width: 343px;
+    min-height: 500px;
+}
+
+.my-photo {
+    border-radius: 24px;
+}
+
+.list-descr-about-me {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.wrapper-subtitle-and-btn {}
