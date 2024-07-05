@@ -1,0 +1,104 @@
+
+
+.covers-section {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.covers-container {
+    max-width: 375px;
+    background-image: url(/img/covers-img/covers-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(30px);
+    background-color: rgba(217, 217, 217, 0.04);
+    overflow: hidden;
+    height: 508px;
+    
+}
+
+.covers-list {
+    display: flex;
+    transform: rotate(16deg);
+    transform-origin: right;
+}
+
+.covers-item {
+background-size: cover;
+flex-shrink: 0;
+        margin-bottom: 25px;
+        margin-right: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        animation-name: marqueeLine;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .covers-container {
+        background-image: url(/img/covers-img/covers-mobile@2x.png);
+    }
+}
+
+
+/* Tablet-Styles */
+
+
+@media only screen and (min-width: 768px) {
+    .covers-section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .covers-container {
+        max-width: 768px;
+        background-image: url(/img/covers-img/covers-tablet.png);
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        .advertisement-container {
+            background-image: url(/img/covers-img/covers-tablet@2x.png);
+        }
+    }
+}
+
+/* Desktop-Styles */
+
+
+@media only screen and (min-width: 1440px) {
+    .covers-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
+    .covers-container {
+        max-width: 1440px;
+        background-image: url(/img/covers-img/covers-desktop.png);
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        .advertisement-container {
+            background-image: url(/img/covers-img/covers-desktop@2x.png);
+        }
+    }
+}
+
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
