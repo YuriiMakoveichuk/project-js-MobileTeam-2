@@ -55,6 +55,7 @@
 .wrapper-subtitle-and-btn {
     display: flex;
     justify-content: space-between;
+    /*  */
     margin-bottom: 12px;
 }
 
@@ -127,10 +128,6 @@
     color: #fafafa;
 }
 
-
-
-
-
 .btn-next-skill {
     display: flex;
     justify-content: center;
@@ -139,11 +136,8 @@
     border: transparent;
     stroke: #3B3B3B;
     fill: transparent;
-
-    /* width: 32px;
-    height: 32px; */
 }
 
-.btn-next-skill use {
+/* .btn-next-skill use {
     background-color: transparent;
-}
+} */
