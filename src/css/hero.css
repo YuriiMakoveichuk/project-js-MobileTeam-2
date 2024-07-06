@@ -1,12 +1,10 @@
 .hero-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    gap: 212px;
     background-image: url('../img/hero/hero-background-mobile.png');
     background-size: cover;
     color: #fafafa;
-    position: relative;
 }
 .hero-title{
     font-weight: 500;
@@ -14,11 +12,11 @@
     line-height: 1;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    padding-top: 218px;
 }
 .hero-contacts {
-    position: absolute;
     display: inline;
-    bottom: 32px;
+    margin-bottom: 32px;
     width: 100%;
 }
 .hero-contacts-list{
@@ -50,4 +48,50 @@
     .hero {
         background-image: url('../img/hero/hero-background-mobile@2x.png');
     }
+}
+/* ===============Tablet Styles================= */
+@media only screen and (min-width: 768px) {
+    .hero-container {
+        background-image: url('../img/hero/hero-background-tablet.png');
+        gap: 187px;
+    }
+    .hero-title{
+    font-size: 90px;
+    padding-top: 300px;
+    }
+    .hero-contacts-list {
+        justify-content: flex-end;
+        gap: 8px;
+        padding-right: 32px;
+        font-size: 16px;
+    }
+    .hero-contacts-list-item{
+        padding: 18px;
+        width: 55px;
+        height: 55px;
+
+    }
+    .hero-email-link {
+        width: auto;
+        padding: 18px;
+    }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+only screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+    .hero-container {
+        background-image: url('../img/hero/hero-background-tablet@2x.png');
+    }
+}
+
+/* ===============Desktop Styles================= */
+@media only screen and (min-width: 1440px) {
+    .hero-container {
+            background-image: url('../img/hero/hero-background.png');
+            gap: 187px;
+        }
+    
+    .hero-title{
+    padding-left: 146px;
+    }
+ 
 }
