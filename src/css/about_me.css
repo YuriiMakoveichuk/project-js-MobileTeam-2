@@ -5,7 +5,7 @@
 .wrapper-about-me-and-photo {
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    gap: 16px;
     margin-bottom: 32px;
 }
 
@@ -106,6 +106,7 @@
 .wrapper-skills {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .list-my-skills {
@@ -131,18 +132,35 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: #fafafa;
+    transition:
+        background-color 250ms linear,
+        color250ms linear;
+}
+
+.item-skill:hover,
+.item-skill:focus {
+    color: #242527;
+    background-color: #fafafa;
+    cursor: pointer;
 }
 
 .btn-next-skill {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     background-color: transparent;
     border: transparent;
+    border-radius: 100px;
     stroke: #3B3B3B;
     fill: transparent;
     width: 28px;
     height: 28px;
+    transition: background-color 250ms linear;
+}
+
+.btn-next-skill:hover,
+.btn-next-skill:focus {
+    background-color: #fafafa;
 }
 
 
@@ -161,7 +179,7 @@
     .text-about-me {
         padding: 64px;
         font-size: 38px;
-        line-height: 1.05263;
+        line-height: 1.05;
         max-width: 704px;
         min-height: 700px;
     }
@@ -216,4 +234,39 @@
 
 
 
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+
+    .section-about-me {
+        margin-top: 48px;
+        margin-bottom: 82px;
+    }
+
+    .wrapper-about-me-and-photo {
+        flex-direction: row;
+        margin-bottom: 96px;
+    }
+
+    .text-about-me {
+        font-size: 38px;
+        max-width: 680px;
+    }
+
+    /*  */
+    .list-descr-about-me {
+        margin-bottom: 96px;
+    }
+
+    .wrapper-subtitle-and-btn {
+        /* need modify */
+        /* margin-bottom: 8px; */
+    }
+
+    .full-text-descr-about-me {
+        max-width: 612px;
+        margin-left: 696px;
+    }
+
+    .paragraph-one {
+        margin-bottom: 32px;
+    }
+}
