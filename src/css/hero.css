@@ -93,5 +93,10 @@ only screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
     .hero-title{
     padding-left: 146px;
     }
- 
+        @media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
+        only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2) {
+            .hero-container {
+                background-image: url('../img/hero/hero-background@2x.png');
+            }
+}
 }
