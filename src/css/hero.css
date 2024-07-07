@@ -1,0 +1,97 @@
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    gap: 212px;
+    background-image: url('../img/hero/hero-background-mobile.png');
+    background-size: cover;
+    color: #fafafa;
+}
+.hero-title{
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    padding-top: 218px;
+}
+.hero-contacts {
+    display: inline;
+    margin-bottom: 32px;
+    width: 100%;
+}
+.hero-contacts-list{
+    display: flex;
+    gap: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+}
+.hero-contacts-list-item{
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+}
+.hero-email-link{
+    width: auto;
+    padding: 10px;
+}
+
+.hero-contacts-list-item:hover,
+.hero-contacts-list-item:focus {
+    border-color: #fafafa;
+}
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    .hero {
+        background-image: url('../img/hero/hero-background-mobile@2x.png');
+    }
+}
+/* ===============Tablet Styles================= */
+@media only screen and (min-width: 768px) {
+    .hero-container {
+        background-image: url('../img/hero/hero-background-tablet.png');
+        gap: 187px;
+    }
+    .hero-title{
+    font-size: 90px;
+    padding-top: 300px;
+    }
+    .hero-contacts-list {
+        justify-content: flex-end;
+        gap: 8px;
+        padding-right: 32px;
+        font-size: 16px;
+    }
+    .hero-contacts-list-item{
+        padding: 18px;
+        width: 55px;
+        height: 55px;
+
+    }
+    .hero-email-link {
+        width: auto;
+        padding: 18px;
+    }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+only screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+    .hero-container {
+        background-image: url('../img/hero/hero-background-tablet@2x.png');
+    }
+}
+
+/* ===============Desktop Styles================= */
+@media only screen and (min-width: 1440px) {
+    .hero-container {
+            background-image: url('../img/hero/hero-background.png');
+            gap: 187px;
+        }
+    
+    .hero-title{
+    padding-left: 146px;
+    }
+ 
+}
