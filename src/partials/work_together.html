@@ -1,4 +1,4 @@
-<footer class="footer-background-color">
+<footer class="footer-background-color" id="work_together">
   <div class="footer-container">
     <img
       src="./images/logo-photo.png"
@@ -20,8 +20,10 @@
             id="user-mail"
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           />
-          <span>...</span>
         </label>
+        <div id="toast" class="toast">
+          <p class="message"></p>
+        </div>
         <textarea
           class="form-textarea"
           name="user-comment"
@@ -46,5 +48,22 @@
         </li>
       </ul>
     </address>
+  </div>
+  <!-- / --------- Backdrop ---------- / -->
+  <div class="backdrop is-open">
+    <div class="modal hidden">
+      <button type="button" class="footer-close-btn">
+        <svg class="close-button-icon" width="24" height="24">
+          <use href="./img/symbol-defs.svg#icon-btn-close-modal"></use>
+        </svg>
+      </button>
+      <h3 class="backdrop-title">
+        Thank you for your interest in cooperation!
+      </h3>
+      <p class="backdrop-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
   </div>
 </footer>
