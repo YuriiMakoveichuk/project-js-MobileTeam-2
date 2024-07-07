@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"commonHelpers.js","sources":["../src/js/covers.js"],"sourcesContent":["const sectionElCovers = document.querySelector('.covers-container');\nconsole.log(sectionElCovers.clientHeight);\nconst liElem = document.querySelectorAll('.covers-item');\nconsole.log(liElem);\n"],"names":["sectionElCovers","liElem"],"mappings":"ssBAAA,MAAMA,EAAkB,SAAS,cAAc,mBAAmB,EAClE,QAAQ,IAAIA,EAAgB,YAAY,EACxC,MAAMC,EAAS,SAAS,iBAAiB,cAAc,EACvD,QAAQ,IAAIA,CAAM"}
