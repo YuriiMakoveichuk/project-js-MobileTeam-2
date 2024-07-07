@@ -1,0 +1,125 @@
+.covers-section {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.covers-container {
+    max-width: 375px;
+    background-image: url(/img/covers-img/covers-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(30px);
+    background-color: rgba(217, 217, 217, 0.04);
+    overflow: hidden;
+    height: 508px;
+    position: relative;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .covers-container {
+        background-image: url(/img/covers-img/covers-mobile@2x.jpg);
+    }
+}
+
+.covers-list {
+    display: flex;
+    transform: rotate(17deg);
+    transform-origin: right;
+    margin-left: -150px;
+}
+
+.covers-list img {
+    width: 282px;
+    height: 155px;
+}
+
+.covers-item {
+    background-size: cover;
+    flex-shrink: 0;
+    margin-bottom: 25px;
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+        
+}
+
+.js-covers-item {
+    animation-name: runningLine;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+/* Tablet-Styles */
+
+
+@media only screen and (min-width: 768px) {
+    .covers-section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .covers-container {
+        max-width: 768px;
+        height: 960px;
+        background-image: url(/img/covers-img/covers-tablet.jpg);
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        .covers-container {
+            background-image: url(/img/covers-img/covers-tablet@2x.jpg);
+        }
+    }
+
+    .covers-list img {
+        width: 544px;
+        height: 314px;
+    }
+
+    .covers-item {
+        margin-bottom: 45px;
+        margin-right: 40px;
+    }
+}
+
+/* Desktop-Styles */
+
+
+@media only screen and (min-width: 1440px) {
+    .covers-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
+    .covers-container {
+        max-width: 1440px;
+        background-image: url(/img/covers-img/covers-desktop.jpg);
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        .covers-container {
+            background-image: url(/img/covers-img/covers-desktop@2x.jpg);
+        }
+    }
+}
+
+
+ @keyframes runningLine {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateX(-180%);
+    }
+} 

@@ -1,3 +1,5 @@
+import './js/covers.js';
+
 import './js/about_me.js';
 import './js/benefits.js';
 import './js/faq.js';
