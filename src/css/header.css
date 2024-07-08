@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 header {
@@ -18,13 +19,13 @@ button {
 .header-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
     width: 100%;
 }
 
 .left-side {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
 }
 
 .header-logo {
@@ -35,17 +36,54 @@ button {
 }
 
 .left-side .text {
-    font-size: 16px; /* Example text size */
     color: #fafafa;
     display: flex;
-    align-items: center; /* Center text vertically within its container */
+    align-items: center;
+}
+
+.menu-button {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+}
+
+.menu-hidden-items {
+    display: none;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 18px;
+    padding: 0;
+    z-index: 1;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle:checked + .menu-hidden-items {
+    display: block;
+}
+
+.menu-hidden-items:focus {
+    display: none;
 }
 
 .menu-open-button-btn,
 .close-button {
     background: transparent;
-    width: 28px; /* Button width matches SVG */
-    height: 28px; /* Button height matches SVG */
+    width: 28px;
+    height: 28px;
     border: none;
     display: flex;
     align-items: center;
@@ -54,17 +92,17 @@ button {
 
 .menu-open-button-svg,
 .close-modal-icon {
-    width: 28px; /* Example SVG width */
-    height: 28px; /* Example SVG height */
-    stroke: #fafafa; /* Example SVG stroke color */
-    stroke-width: 2; /* Example SVG stroke width */
+    width: 28px;
+    height: 28px;
+    stroke: #fafafa;
+    stroke-width: 2;
 }
 
 
 .close-button {
     position: absolute;
-    top: 32px; /* Same padding as the header */
-    right: 16px; /* Same padding as the header */
+    top: 32px;
+    right: 16px;
     padding: 0;
     cursor: pointer;
     line-height: 0;
@@ -90,7 +128,7 @@ button {
 .backdrop.show {
     opacity: 1;
     visibility: visible;
-    overflow: hidden; /* Prevent scrolling when backdrop is shown */
+    overflow: hidden;
 }
 
 .menu-list {
@@ -105,7 +143,6 @@ button {
 
 .menu-items {
     font-weight: 500;
-    font-size: 16px;
     letter-spacing: -0.02em;
     text-decoration: underline;
     text-decoration-skip-ink: none;
@@ -115,6 +152,10 @@ button {
     display: inline-block;
     width: 100%;
     cursor: pointer;
+}
+
+.menu-hidden-item:not(:last-child) {
+    margin-bottom: 5px;
 }
 
 .menu-item:not(:last-child) {
@@ -128,19 +169,45 @@ button {
     letter-spacing: -0.02em;
     color: #fafafa;
     border-radius: 60px;
-    padding: 14px 31px;
-    width: 164px;
-    height: 50px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
     background: #ed3b44;
     border: none;
-    margin-bottom: 64px;
-    display: inline-block; /* Ensures it behaves like a block element */
-    text-decoration: none; /* Removes underline */
-    cursor: pointer; /* Changes cursor on hover */
+    display: inline-block;
     overflow: hidden;
 }
 
-@media only screen and (min-width: 376px) {
+.order-backdrop-button {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    background: #ed3b44;
+    border-radius: 60px;
+    padding: 14px 31px;
+    width: 164px;
+    height: 45px;
+    margin-bottom: 64px;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .menu-button {
+        display: none;
+    }
+
+    .menu-hidden-items {
+        display: none !important;
+    }
+    
+    .order-button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
     .menu-open-button-btn {
         display: none;
     }
