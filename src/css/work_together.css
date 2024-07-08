@@ -31,6 +31,11 @@
   margin-bottom: 63px;
 }
 .title-work {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 2.8rem;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
   color: #ed3b44;
 }
 .form-input-container {
@@ -121,6 +126,9 @@
   .title {
     font-size: 64px;
     line-height: 4.4rem;
+  }
+  .title-work {
+    font-size: 64px;
   }
   .form-input-container {
     display: flex;
