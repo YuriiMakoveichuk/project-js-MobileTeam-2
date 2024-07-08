@@ -16,50 +16,59 @@
     <script type="module" crossorigin src="/project-js-MobileTeam-2/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-js-MobileTeam-2/assets/vendor-607157ac.js">
     <link rel="stylesheet" href="/project-js-MobileTeam-2/assets/vendor-9842083d.css">
-    <link rel="stylesheet" href="/project-js-MobileTeam-2/assets/index-d89996db.css">
+    <link rel="stylesheet" href="/project-js-MobileTeam-2/assets/index-ef70ef50.css">
   </head>
 
   <body>
     <header>
-    <div class="header-content">
-        <div class="left-side">
-                <img src="/project-js-MobileTeam-2/assets/logo-photo-header-ad04982a.png" alt="Logo" class="header-logo">
-            <span class="text">Jefferson*</span>
-        </div>
-        <div>
-            <label for="menu-toggle" class="menu-button">Menu</label>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <ul class="menu-hidden-items" tabindex="0">
-                <li class="menu-hidden-item"><a href="#about_me">About me</a></li>
-                <li class="menu-hidden-item"><a href="#benefits">Benefits</a></li>
-                <li class="menu-hidden-item"><a href="#projects">Projects</a></li>
-                <li class="menu-hidden-item"><a href="#faq">FAQ</a></li>
-            </ul>
-        </div>
-        <a class="order-button" href="#work_together">Order the project</a>
-        <button class="menu-open-button-btn">
-            <svg class="menu-open-button-svg" width="28" height="28">
-                <use href="/project-js-MobileTeam-2/assets/symbol-defs-94770462.svg#icon-btn-burger-menu"></use>
-            </svg>
-        </button>
+  <div class="container header-content">
+    <div class="left-side">
+      <img
+        src="/project-js-MobileTeam-2/assets/logo-photo-header-ad04982a.png"
+        alt="Logo"
+        class="header-logo"
+      />
+      <span class="text">Jefferson*</span>
     </div>
+    <div>
+      <label for="menu-toggle" class="menu-button">Menu</label>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <ul class="menu-hidden-items" tabindex="0">
+        <li class="menu-hidden-item"><a href="#about_me">About me</a></li>
+        <li class="menu-hidden-item"><a href="#benefits">Benefits</a></li>
+        <li class="menu-hidden-item"><a href="#projects">Projects</a></li>
+        <li class="menu-hidden-item"><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <a class="order-button" href="#work_together">Order the project</a>
+    <button class="menu-open-button-btn">
+      <svg class="menu-open-button-svg" width="28" height="28">
+        <use href="/project-js-MobileTeam-2/assets/symbol-defs-94770462.svg#icon-btn-burger-menu"></use>
+      </svg>
+    </button>
+  </div>
 </header>
 <div class="backdrop">
-    <button class="close-button" type="button" aria-label="Close">
-        <svg class="menu-open-button-svg close-modal-icon" width="28px" height="28px">
-            <use href="/project-js-MobileTeam-2/assets/symbol-defs-94770462.svg#icon-btn-close-modal"></use>
-        </svg>
-    </button>
-    <div class="menu-list">
-        <ul class="menu-items">
-            <li class="menu-item"><a href="#about_me">About me</a></li>
-            <li class="menu-item"><a href="#benefits">Benefits</a></li>
-            <li class="menu-item"><a href="#projects">Projects</a></li>
-            <li class="menu-item"><a href="#faq">FAQ</a></li>
-        </ul>
-    </div>
-    <a class="order-backdrop-button" href="#work_together">Order the project</a>
+  <button class="close-button" type="button" aria-label="Close">
+    <svg
+      class="menu-open-button-svg close-modal-icon"
+      width="28px"
+      height="28px"
+    >
+      <use href="/project-js-MobileTeam-2/assets/symbol-defs-94770462.svg#icon-btn-close-modal"></use>
+    </svg>
+  </button>
+  <div class="menu-list">
+    <ul class="menu-items">
+      <li class="menu-item"><a href="#about_me">About me</a></li>
+      <li class="menu-item"><a href="#benefits">Benefits</a></li>
+      <li class="menu-item"><a href="#projects">Projects</a></li>
+      <li class="menu-item"><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+  <a class="order-backdrop-button" href="#work_together">Order the project</a>
 </div>
+
     <main>
       <section class="hero-section">
     <div class="hero-container container">
@@ -309,17 +318,8 @@
 </section>
 
 
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ Accordion</title>
-    <link rel="stylesheet" href="../css/faq.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    <div class="faq-container">
+      <section class="faq" id="faq">
+    <div class="container faq-container">
         <h2>FAQ</h2>
         <ul class="faq-list">
             <li class="faq-item">
@@ -366,9 +366,7 @@
             </li>
         </ul>
     </div>
-    <script src="../js/faq.js"></script>
-</body>
-</html>
+</section>
       <section class="covers-section" id="covers">
   <div class="container covers-container js-covers-container">
     <h2 class="covers-title visually-hidden">Covers</h2>
