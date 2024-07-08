@@ -1,6 +1,5 @@
-import Swiper from "swiper";
-import "swiper/swiper-bundle.min.css"
-
+import Swiper from 'swiper';
+import 'swiper/css';
 
 const reviewsList = document.querySelector('.reviews-list');
 const btnGoLeft = document.querySelector('.btn-go-left');
@@ -56,7 +55,6 @@ async function initSwiper() {
       },
     });
 
-
     btnGoLeft.addEventListener('click', () => {
       if (swiper) {
         swiper.slidePrev();
@@ -70,7 +68,6 @@ async function initSwiper() {
         updateButtonState();
       }
     });
-
 
     updateButtonState();
   } catch (error) {
@@ -99,5 +96,4 @@ function updateButtonState() {
 
 initSwiper();
 
-
-// 
+//
