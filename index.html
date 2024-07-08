@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/project-js-MobileTeam-2/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-js-MobileTeam-2/assets/vendor-a645d922.js">
     <link rel="stylesheet" href="/project-js-MobileTeam-2/assets/vendor-6ff13ef6.css">
-    <link rel="stylesheet" href="/project-js-MobileTeam-2/assets/index-35fbe9c8.css">
+    <link rel="stylesheet" href="/project-js-MobileTeam-2/assets/index-36debf66.css">
   </head>
 
   <body>
@@ -26,6 +26,17 @@
                 <img src="/project-js-MobileTeam-2/assets/logo-photo-header-ad04982a.png" alt="Logo" class="header-logo">
             <span class="text">Jefferson*</span>
         </div>
+        <div>
+            <label for="menu-toggle" class="menu-button">Menu</label>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <ul class="menu-hidden-items" tabindex="0">
+                <li class="menu-hidden-item"><a href="#about_me">About me</a></li>
+                <li class="menu-hidden-item"><a href="#benefits">Benefits</a></li>
+                <li class="menu-hidden-item"><a href="#projects">Projects</a></li>
+                <li class="menu-hidden-item"><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+        <a class="order-button" href="#work_together">Order the project</a>
         <button class="menu-open-button-btn">
             <svg class="menu-open-button-svg" width="28" height="28">
                 <use href="/project-js-MobileTeam-2/assets/symbol-defs-94770462.svg#icon-btn-burger-menu"></use>
@@ -33,7 +44,7 @@
         </button>
     </div>
 </header>
-<div class="backdrop show">
+<div class="backdrop">
     <button class="close-button" type="button" aria-label="Close">
         <svg class="menu-open-button-svg close-modal-icon" width="28px" height="28px">
             <use href="/project-js-MobileTeam-2/assets/symbol-defs-94770462.svg#icon-btn-close-modal"></use>
@@ -41,13 +52,13 @@
     </button>
     <div class="menu-list">
         <ul class="menu-items">
-            <li class="menu-item"><a href="about_me">About me</a></li>
-            <li class="menu-item"><a href="benefits">Benefits</a></li>
-            <li class="menu-item"><a href="projects">Projects</a></li>
-            <li class="menu-item"><a href="faq">FAQ</a></li>
+            <li class="menu-item"><a href="#about_me">About me</a></li>
+            <li class="menu-item"><a href="#benefits">Benefits</a></li>
+            <li class="menu-item"><a href="#projects">Projects</a></li>
+            <li class="menu-item"><a href="#faq">FAQ</a></li>
         </ul>
     </div>
-    <a class="order-button" href="#work_together">Order the project</a>
+    <a class="order-backdrop-button" href="#work_together">Order the project</a>
 </div>
     <main>
       <section class="hero-section">
