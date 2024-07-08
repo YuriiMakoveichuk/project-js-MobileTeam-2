@@ -111,7 +111,7 @@
     justify-content: space-between;
 }
 
-.swiper-container{
+.swiper-about {
     width: 260px;
     overflow: hidden;
 }
@@ -230,7 +230,7 @@
     }
 
     
-    .swiper-container {
+    .swiper-about {
         width: 600px;
     }
 
@@ -253,9 +253,6 @@
     } 
 
 }
-
-
-
 
 
 @media only screen and (min-width: 1440px) {
@@ -294,7 +291,7 @@
         margin-bottom: 32px;
     }
 
-    .swiper-container{
+    .swiper-about {
         width: 1200px;
     }
 

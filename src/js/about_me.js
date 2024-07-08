@@ -1,15 +1,14 @@
 import Accordion from 'accordion-js';
 import '../css/about_me/accardion.css';
-
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle'; 
+import Swiper from 'swiper';
+import 'swiper/css';
+// import Swiper from 'swiper/bundle';
+// import 'swiper/css/bundle'; 
 
 document.addEventListener('DOMContentLoaded', () => {
     const width = window.innerWidth
     if (width < 1440){
-      const slider = new Swiper('.swiper-container',{
-        loop: true,
-        loopedSlides: 1,
+      new Swiper('.swiper-about',{
         slidesPerView: 2,
         spaceBetween: 0,
         slideToClickedSlide: true,
@@ -21,13 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         breakpoints: {
             // when window width is >= 320px
-            320: { loop: true,
+            320: { 
+                loop: true,
                 loopedSlides: 1,
                 slidesPerView: 2,
                 spaceBetween: 0,
                 slideToClickedSlide: true,
-                loop: true,
-                loopedSlides: 1,
             },
             // when window width is >= 768px
             768: {
@@ -43,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
     }
-  })
+});
 
   const skillList = document.querySelector('.list-my-skills');
   const skills = skillList.children;
@@ -66,7 +64,7 @@ function updateActive() {
     updateActive();
   });
   document.addEventListener('keydown', (e) => {
-    if (window.innerWidth >= 1440 || e.key === 'ArrowRight') {
+    if (e.key === 'ArrowRight') {
       updateActive();
     }
   });
