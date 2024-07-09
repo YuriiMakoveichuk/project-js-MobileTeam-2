@@ -100,7 +100,7 @@ function updateActive() {
 
 
 
-const accAboutMeEl = new Accordion('.faq-list', {
+const accFaqEl = new Accordion('.faq-list', {
     duration: 500,
     showMultiple: true,
     onOpen: function (currentEl) {
@@ -117,4 +117,4 @@ const accAboutMeEl = new Accordion('.faq-list', {
     }
 });
 
-accAboutMeEl.open(0);
+accFaqEl.open(0);
