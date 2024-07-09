@@ -112,15 +112,16 @@
             flex-wrap: wrap;
          }
 
-                 .faq-item.ac:nth-child(2n+1) {
-                     border-right: 1px solid rgba(250, 250, 250, 0.2);
-                     padding-right: 32px;
-                 }
-.faq-item.ac:nth-child(2n) {
-    padding-left: 32px;
-}
+        .faq-item.ac:nth-child(2n+1) {
+            border-right: 1px solid r(250, 250,250, 0.2);
+            padding-right: 32px;
+        }
+        
+        .faq-item.ac:nth-child(2n) {
+            padding-left: 32px;
+        }
 
-.faq-item.ac:nth-child(5) {
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-}
+        .faq-item.ac:nth-child(5) {
+            border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+        }
 }

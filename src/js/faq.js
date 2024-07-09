@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-new Accordion('.accordion-container', {
+export const accord = new Accordion('.container-first', {
   duration: 500,
   showMultiple: true,
   onOpen: function (currentEl) {
