@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.ac .ac-panel {
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-timing-function: ease
+}
+
+.ac.js-enabled .ac-panel {
+    visibility: hidden
+}
+
+.ac.is-active .ac-panel {
+    visibility: visible
+}
