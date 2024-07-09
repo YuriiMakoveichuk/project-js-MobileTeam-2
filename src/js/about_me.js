@@ -1,9 +1,7 @@
 import Accordion from 'accordion-js';
-import '../css/about_me/accardion.css';
+import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper';
 import 'swiper/css';
-// import Swiper from 'swiper/bundle';
-// import 'swiper/css/bundle';
 
 document.addEventListener('DOMContentLoaded', () => {
   const width = window.innerWidth;
@@ -69,21 +67,27 @@ document.addEventListener('keydown', e => {
   }
 });
 
-const accAboutMeEl = new Accordion('.accordion-container-about-me', {
+const test = new Accordion('.accordion-container', {
   duration: 500,
   showMultiple: true,
   onOpen: function (currentEl) {
-    const btnShowContent = currentEl.querySelector('.icon-btn-show-content');
-    const btnHideContent = currentEl.querySelector('.icon-btn-hide-content');
+    const btnShowContent = currentEl.querySelector(
+      '.icon-btn-show-content-about'
+    );
+    const btnHideContent = currentEl.querySelector(
+      '.icon-btn-hide-content-about'
+    );
     btnHideContent.classList.remove('visually-hidden');
     btnShowContent.classList.add('visually-hidden');
   },
   onClose: function (currentEl) {
-    const btnShowContent = currentEl.querySelector('.icon-btn-show-content');
-    const btnHideContent = currentEl.querySelector('.icon-btn-hide-content');
+    const btnShowContent = currentEl.querySelector(
+      '.icon-btn-show-content-about'
+    );
+    const btnHideContent = currentEl.querySelector(
+      '.icon-btn-hide-content-about'
+    );
     btnHideContent.classList.add('visually-hidden');
     btnShowContent.classList.remove('visually-hidden');
   },
 });
-
-accAboutMeEl.open(0);
