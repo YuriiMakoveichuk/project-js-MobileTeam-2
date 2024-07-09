@@ -26,40 +26,6 @@
   padding: 24px;
 }
 
-.benefits-item:hover .square-icon {
-  animation: shake 2s infinite linear;
-}
-
-.benefits-item:hover {
-  border: solid 1px #ed3b44;
-}
-
-@keyframes shake {
-  0% {
-    background-color: #e03740e1;
-    transform: translate(5px, 5px);
-  }
-
-  10% {
-    transform: translate(-5px, -5px);
-  }
-
-  20% {
-    transform: translate(5px, 5px);
-  }
-
-  30% {
-    transform: translate(-5px, -5px);
-  }
-
-  40% {
-    transform: translate(5px, 5px);
-  }
-
-  50% {
-    transform: translate(-5px, -5px);
-  }
-}
 .item-title {
   font-weight: 600;
   font-size: 20px;
