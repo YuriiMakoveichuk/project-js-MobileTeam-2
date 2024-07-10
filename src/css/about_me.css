@@ -99,10 +99,12 @@
 
 .accept-color-red {
     color: #ed3b44;
+    font-size: inherit;
 }
 
 .accept-color-transparent-black {
     color: rgba(250, 250, 250, 0.4);
+    font-size: inherit;
 }
 
 .my-photo {
@@ -379,10 +381,12 @@
     }
 
 
+
     .arr-photos {
         display: flex;
     }
  
+
 
     .list-descr-about-me {
         margin-bottom: 96px;
