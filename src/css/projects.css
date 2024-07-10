@@ -89,13 +89,13 @@
     padding: 14px;
     width: 52px;
     height: 52px;
-    background-color: transparent;
+    background-color:#1c1d20;
 
     position: relative;
     line-height: 0;
     top: 15px;
     
-    fill: transparent;
+    /* fill: transparent; */
     stroke: #FAFAFA;
     transition: border-color 250ms linear;
 } 
@@ -104,9 +104,9 @@
     content: '';
 }
 /*===============/SWIPER===============*/
-.projects-btn:hover, .projects-btn:focus {
-    border-color: #E0373F;
-}
+/* .projects-btn:hover, .projects-btn:focus {
+    border-color: #3B3B3B;
+} */
 
 .projects-svg {
     width: 24px;
@@ -114,9 +114,9 @@
     transition: stroke 250ms linear;
 }
 
-.projects-btn:hover>.projects-svg, .projects-btn:focus>.projects-svg {
-    stroke: #E0373F ;
-}
+/* .projects-btn:hover>.projects-svg, .projects-btn:focus>.projects-svg {
+    stroke: #3B3B3B ;
+} */
 
 @media only screen and (min-width: 768px) {
     .section-projects {
