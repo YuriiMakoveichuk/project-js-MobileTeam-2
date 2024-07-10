@@ -1,10 +1,17 @@
-.hero-container{
-    display: flex;
-    flex-direction: column;
-    gap: 212px;
+
+
+.hero-section {
+    padding-top: 281px;
+    padding-bottom: 32px;
     background-image: url('/img/hero/hero-background-mobile.png');
     background-size: cover;
     color: #fafafa;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    
 }
 .hero-title{
     font-weight: 500;
@@ -12,11 +19,11 @@
     line-height: 1;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    padding-top: 218px;
+    margin-bottom: 243px;
+
 }
 .hero-contacts {
     display: inline;
-    margin-bottom: 32px;
     width: 100%;
 }
 .hero-contacts-list{
@@ -46,24 +53,29 @@
     border-color: #fafafa;
 }
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
-    .hero {
+    .hero-section {
         background-image: url('/img/hero/hero-background-mobile@2x.png');
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .hero-contacts-list {
+        font-size: 8px;
     }
 }
 /* ===============Tablet Styles================= */
 @media only screen and (min-width: 768px) {
-    .hero-container {
+    .hero-section {
+        padding-top: 300px;
         background-image: url('/img/hero/hero-background-tablet.png');
-        gap: 187px;
     }
     .hero-title{
     font-size: 90px;
-    padding-top: 300px;
+    margin-bottom: 187px;
     }
     .hero-contacts-list {
         justify-content: flex-end;
         gap: 8px;
-        padding-right: 32px;
         font-size: 16px;
     }
     .hero-contacts-list-item{
@@ -78,24 +90,26 @@
 }
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
 only screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
-    .hero-container {
+    .hero-section {
         background-image: url('/img/hero/hero-background-tablet@2x.png');
     }
 }
 
 /* ===============Desktop Styles================= */
 @media only screen and (min-width: 1440px) {
-    .hero-container {
+    .hero-section {
             background-image: url('/img/hero/hero-background.png');
-            gap: 187px;
         }
     
     .hero-title{
-    padding-left: 146px;
+        margin-bottom: 243px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1175px;
     }
         @media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
         only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2) {
-            .hero-container {
+            .hero-section {
                 background-image: url('/img/hero/hero-background@2x.png');
             }
 }
