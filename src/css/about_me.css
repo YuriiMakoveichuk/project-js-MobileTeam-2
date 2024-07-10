@@ -277,8 +277,8 @@
 @media only screen and (min-width: 768px) {
 
     .section-about-me {
-        margin-top: 32px;
-        margin-bottom: 48px;
+        padding-top: 64px;
+        padding-bottom: 48px;
     }
 
     .wrapper-about-me-and-photo {
@@ -382,8 +382,8 @@
 @media only screen and (min-width: 1440px) {
 
     .section-about-me {
-        margin-top: 48px;
-        margin-bottom: 82px;
+        padding-top: 96px;
+        padding-bottom: 82px;
     }
 
     .wrapper-about-me-and-photo {

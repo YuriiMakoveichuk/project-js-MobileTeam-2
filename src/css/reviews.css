@@ -1,10 +1,15 @@
+.reviews-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .reviews-title {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.4);
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .swiper-container {
@@ -98,6 +103,11 @@
 }
 /* tablet btn */
 @media (min-width: 768px) {
+  .reviews-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
   .btn {
     width: 68px;
     height: 68px;
@@ -116,6 +126,11 @@
 
 /* desktop btn*/
 @media (min-width: 1440px) {
+  .reviews-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
   .btn {
     width: 68px;
     height: 68px;
