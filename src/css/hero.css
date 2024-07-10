@@ -29,11 +29,12 @@
 .hero-contacts-list-item{
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    padding-top: 10px;
-    padding-bottom:10px;
     width: 37px;
     height: 37px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 250ms linear;
 }
 .hero-email-link{
     width: auto;
@@ -66,7 +67,6 @@
         font-size: 16px;
     }
     .hero-contacts-list-item{
-        padding: 18px;
         width: 55px;
         height: 55px;
 
