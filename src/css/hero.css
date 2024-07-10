@@ -1,17 +1,15 @@
-
-
-.hero-section {
-    padding-top: 281px;
-    padding-bottom: 32px;
-    background-image: url('/img/hero/hero-background-mobile.png');
-    background-size: cover;
-    color: #fafafa;
+.hero-section{
+padding-top: 218px;
+padding-bottom: 32px;
+background-image: url('/img/hero/hero-background-mobile.png');
+background-size: cover;
 }
 
 .hero-container{
     display: flex;
     flex-direction: column;
-    
+    gap: 212px;
+    color: #fafafa;
 }
 .hero-title{
     font-weight: 500;
@@ -19,8 +17,7 @@
     line-height: 1;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    margin-bottom: 243px;
-
+    
 }
 .hero-contacts {
     display: inline;
@@ -36,12 +33,11 @@
 .hero-contacts-list-item{
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
+    padding-top: 10px;
+    padding-bottom:10px;
     width: 37px;
     height: 37px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: border-color 250ms linear;
+    text-align: center;
 }
 .hero-email-link{
     width: auto;
@@ -53,32 +49,48 @@
     border-color: #fafafa;
 }
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
-    .hero-section {
+    .hero-section{
         background-image: url('/img/hero/hero-background-mobile@2x.png');
     }
 }
-
+/* ===============small mobile================= */
 @media only screen and (max-width: 374px) {
+    
     .hero-contacts-list {
-        font-size: 8px;
+            font-size: 12px;
+        }
+    
+    .hero-contacts-list-item {
+        width: 30px;
+        height: 30px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
+    .hero-email-link {
+            width: auto;
+            padding: 8px;
+        }
 }
 /* ===============Tablet Styles================= */
 @media only screen and (min-width: 768px) {
-    .hero-section {
-        padding-top: 300px;
+    .hero-section{
         background-image: url('/img/hero/hero-background-tablet.png');
+        padding-top: 300px;
+    }
+    .hero-container {
+        gap: 187px;
     }
     .hero-title{
     font-size: 90px;
-    margin-bottom: 187px;
     }
     .hero-contacts-list {
         justify-content: flex-end;
         gap: 8px;
+        padding-right: 32px;
         font-size: 16px;
     }
     .hero-contacts-list-item{
+        padding: 18px;
         width: 55px;
         height: 55px;
 
@@ -97,16 +109,15 @@ only screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
 
 /* ===============Desktop Styles================= */
 @media only screen and (min-width: 1440px) {
-    .hero-section {
-            background-image: url('/img/hero/hero-background.png');
+    .hero-section{
+        background-image: url('/img/hero/hero-background.png');
+        padding-left: 146px;
+    }
+    
+    .hero-container {   
+            gap: 187px;
         }
     
-    .hero-title{
-        margin-bottom: 243px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1175px;
-    }
         @media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
         only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2) {
             .hero-section {
