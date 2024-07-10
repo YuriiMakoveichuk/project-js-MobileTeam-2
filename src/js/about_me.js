@@ -91,3 +91,4 @@ const test = new Accordion('.accordion-container', {
     btnShowContent.classList.remove('visually-hidden');
   },
 });
+test.open(0);
