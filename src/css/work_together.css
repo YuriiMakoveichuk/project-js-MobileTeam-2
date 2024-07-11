@@ -1,13 +1,12 @@
 .footer {
   background-color: #1c1d20;
   padding-top: 64px;
+  padding-bottom: 32px;
 }
 .footer-container {
   min-width: 320px;
   background-color: #1c1d20;
   margin: 0px 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .logo {
   border-radius: 12px;
@@ -83,7 +82,6 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   margin-top: 4px;
-  height: 16px;
 }
 .success {
   color: green;
@@ -143,13 +141,11 @@
 
 @media only screen and (min-width: 768px) {
   .footer {
-    padding-top: 96px;
+    padding-top: 128px;
+    padding-bottom: 169px;
   }
   .footer-container {
     max-width: 768px;
-    height: 636px;
-    padding-top: 80px;
-    padding-bottom: 0;
     margin: 0px 32px;
   }
   .logo {
@@ -207,15 +203,11 @@
 }
 @media only screen and (min-width: 1440px) {
   .footer {
-    padding-top: 164px;
+    display: flex;
   }
   .footer-container {
     max-width: 1440px;
-    padding-top: 80px;
-    padding-right: 196px;
-    padding-bottom: 169px;
-    padding-left: 196px;
-    margin: 0;
+    margin: 0 auto;
   }
   .title {
     width: 500px;
