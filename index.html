@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/project-js-MobileTeam-2/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-js-MobileTeam-2/assets/vendor-6ae7d6dd.js">
     <link rel="stylesheet" href="/project-js-MobileTeam-2/assets/vendor-c4244327.css">
-    <link rel="stylesheet" href="/project-js-MobileTeam-2/assets/index-7ab10758.css">
+    <link rel="stylesheet" href="/project-js-MobileTeam-2/assets/index-cdbdd4fa.css">
   </head>
 
   <body>
@@ -24,15 +24,16 @@
   <div class="container header-content">
     <div class="left-side">
       <img
-        src="/project-js-MobileTeam-2/assets/logo-photo-header-ad04982a.png"
+        srcset="/project-js-MobileTeam-2/assets/logo-photo-header-60fc012b.png 1x, /project-js-MobileTeam-2/assets/logo-photo-header@2x-b26dd0bd.png 2x"
+        src="/project-js-MobileTeam-2/assets/logo-photo-header-60fc012b.png"
         alt="Logo"
         class="header-logo"
       />
       <span class="text">Jefferson*</span>
     </div>
-    <div>
-      <label for="menu-toggle" class="menu-button">Menu</label>
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <div class="dropdown">
+      <button class="menu-button" type="submit">Menu</button>
       <ul class="menu-hidden-items" tabindex="0">
         <li class="menu-hidden-item"><a href="#about_me">About me</a></li>
         <li class="menu-hidden-item"><a href="#benefits">Benefits</a></li>
@@ -60,12 +61,15 @@
   </button>
   <div class="menu-list">
     <ul class="menu-items">
-      <li class="menu-item"><a href="#about-me">About me</a></li>
+      <li class="menu-item"><a href="#about_me">About me</a></li>
       <li class="menu-item"><a href="#benefits">Benefits</a></li>
       <li class="menu-item"><a href="#projects">Projects</a></li>
       <li class="menu-item"><a href="#faq">FAQ</a></li>
     </ul>
   </div>
+  <!-- <button class="order-backdrop-button" href="#work_together">
+    Order the project
+  </button> -->
   <a class="order-backdrop-button" href="#work_together">Order the project</a>
 </div>
 
@@ -749,7 +753,7 @@
     <footer class="footer" id="work_together">
   <div class="footer-container">
     <img
-      srcset="/project-js-MobileTeam-2/assets/logo-photo-664679f3.png "
+      srcset="/project-js-MobileTeam-2/assets/logo-photo-664679f3.png 1x, /project-js-MobileTeam-2/assets/logo-photo-664679f3.png 2x"
       src="/project-js-MobileTeam-2/assets/logo-photo-664679f3.png"
       alt="jefferson"
       class="logo"
