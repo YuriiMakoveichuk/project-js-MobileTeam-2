@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.getElementById('menu-button');
+    const menuHiddenItems = document.querySelector('.menu-hidden-items');
+
+    menuButton.addEventListener('click', () => {
+        if (menuHiddenItems.style.display === 'block') {
+            menuHiddenItems.style.display = 'none';
+        } else {
+            menuHiddenItems.style.display = 'block';
+        }
+    });
+
     const menuItems = document.querySelectorAll('.menu-item a');
     menuItems.forEach(item => {
         item.addEventListener('click', (event) => {
@@ -18,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (backdrop) {
             backdrop.classList.remove('show');
             document.body.style.overflow = ''; // Allow scrolling on the body
+            toggleMenuButtons(false); // Show menu-open button
         }
     }
 
@@ -29,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (backdrop) {
                 backdrop.classList.add('show');
                 document.body.style.overflow = 'hidden'; // Prevent scrolling on the body
+                toggleMenuButtons(true); // Show close button
             }
         });
     }
@@ -37,5 +50,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeButton = document.querySelector('.close-button');
     if (closeButton) {
         closeButton.addEventListener('click', closeBackdrop);
+    }
+
+    // Event listener for the "Order the project" button within the backdrop
+    const orderBackdropButton = document.querySelector('.order-backdrop-button');
+    if (orderBackdropButton) {
+        orderBackdropButton.addEventListener('click', (event) => {
+            closeBackdrop(); // Close the backdrop
+        });
+    }
+
+    // Function to toggle visibility of menu open and close buttons
+    function toggleMenuButtons(isBackdropVisible) {
+        const menuOpenButton = document.querySelector('.menu-open-button-btn');
+        const closeButton = document.querySelector('.close-button');
+        if (isBackdropVisible) {
+            menuOpenButton.style.display = 'none';
+            closeButton.style.display = 'flex';
+        } else {
+            menuOpenButton.style.display = 'flex';
+            closeButton.style.display = 'none';
+        }
     }
 });
