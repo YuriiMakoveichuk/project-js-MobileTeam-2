@@ -82,6 +82,8 @@
     height: 52px;   /*swiper*/
     
 }
+
+
 /*===============SWIPER===============*/
 .projects-btn.swiper-button-next, .projects-btn.swiper-button-prev {
     border: 1px solid rgba(250, 250, 250, 0.5);

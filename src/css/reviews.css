@@ -15,6 +15,7 @@
 .swiper-container {
   position: relative;
   overflow: hidden;
+ 
 }
 
 .swiper-wrapper {
@@ -29,6 +30,8 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+
+
 
 .person-avatar {
   border-radius: 10px;
