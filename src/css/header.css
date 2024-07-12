@@ -90,6 +90,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 32px;
+    right: 16px;
+    z-index: 1100;
 }
 
 .menu-open-button-svg,
