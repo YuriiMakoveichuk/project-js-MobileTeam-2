@@ -8,6 +8,8 @@ header {
     position: absolute;
     width: 100%;
     background: transparent;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 button {
@@ -19,7 +21,6 @@ button {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    padding: 32px 16px;
 }
 
 .left-side {
