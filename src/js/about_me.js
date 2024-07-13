@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       },
       navigation: {
-        nextEl: '.swiper-button-next',
+        nextEl: '.swiper-button-next.btn-next-skill',
       },
     });
   }

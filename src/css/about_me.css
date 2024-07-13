@@ -218,12 +218,6 @@
         color 250ms linear;
 }
 
-.item-skill:hover,
-.item-skill:focus {
-    background-color: #E0373F;
-
-}
-
 .btn-next-skill.swiper-button-next {
     border: none;
     background-color: transparent;
@@ -444,8 +438,4 @@
         transition: border-color 250ms linear;
     }
 
-    .swiper-button-next.swiper-button-disabled {
-        opacity: 1 !important;
-        pointer-events: all !important;
-    }
 }

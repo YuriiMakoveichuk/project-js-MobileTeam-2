@@ -171,13 +171,14 @@ button {
     letter-spacing: -0.02em;
     color: #fafafa;
     border-radius: 60px;
-    padding: 18px 24px;
     width: 163px;
     height: 55px;
     background: #ed3b44;
     border: none;
-    display: inline-block;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .order-backdrop-button {
